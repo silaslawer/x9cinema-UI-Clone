@@ -168,12 +168,15 @@ class _HomeState extends State<Home> {
               print('search');
             },
           ),
-          IconButton(
-            icon: Icon(Feather.align_right),
-            tooltip: 'menu',
-            onPressed: () {
-              print('menu');
-            },
+          Container(
+            width: 20,margin: EdgeInsets.only(right: 15),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.end,mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(height: 2,alignment: Alignment.centerRight,width: 20,color: Color(colorBlack),),
+                SizedBox(height: 5,),
+                Container(height: 2,alignment: Alignment.centerRight,width: 10,color: Color(colorBlack),),
+              ],
+            ),
           )
         ],
       ),
@@ -183,7 +186,7 @@ class _HomeState extends State<Home> {
           child: Column(
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(top: 10, bottom: 10),
+                margin: EdgeInsets.only(top: 10),
                 child: SelectChip(
                   reportList,
                   onSelectionChanged: (selectedList) {

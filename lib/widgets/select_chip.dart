@@ -59,7 +59,7 @@ class _SelectChipState extends State<SelectChip> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
+      height: 50,
       child: _buildChoiceList1(),
     );
   }
