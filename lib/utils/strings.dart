@@ -1,0 +1,3 @@
+const dynamic appBarTitle1 = "X9";
+const dynamic appBarTitle2 = "CINEMA";
+const dynamic synopsis = "Donec felis lectus, tempus quis fringilla quis, venenatis vitae sapien. Curabitur auctor iaculis nisi, lacinia street sodales mattis vel. Nunc sit amet orci ac risusus head eleifend luctus. Donec at dolor in velit blandit hi drent consectetur id quis purus. Sed pretium, urna necibiric sollicitudin rutum, ipsum lacus vehicula vuesax.";
