@@ -292,7 +292,6 @@ class _MovieSeriesDetailState extends State<MovieSeriesDetail> {
                   setState(() {
                     _selectedIndex = 1;
                   });
-                  print("Invest Button");
                 },
                 child: Icon(
                   Fontisto.fire,
@@ -344,8 +343,7 @@ class _MovieSeriesDetailState extends State<MovieSeriesDetail> {
       height: 100,
       child: ListView.builder(
           shrinkWrap: true,
-          //   controller: ScrollController(),
-          itemCount: 5,
+          itemCount: item['cast'] == null ? 0 : item['cast'].length,
           scrollDirection: Axis.horizontal,
           itemBuilder: (BuildContext context, int position) {
             return GestureDetector(
@@ -358,8 +356,8 @@ class _MovieSeriesDetailState extends State<MovieSeriesDetail> {
                 margin: EdgeInsets.only(right: 20.0, bottom: 5.0),
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: NetworkImage(
-                            "https://www.gstatic.com/tv/thumb/persons/269411/269411_v9_bc.jpg"),
+                        image: AssetImage(
+                            item['cast'][position]['url']),
                         fit: BoxFit.cover),
                     borderRadius: BorderRadius.all(Radius.circular(30)),
                     color: Colors.red),
